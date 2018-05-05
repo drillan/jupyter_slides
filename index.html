@@ -11913,6 +11913,19 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#12487;&#12501;&#12457;&#12523;&#12488;&#12395;&#12354;&#12427;Slide&#27231;&#33021;">&#12487;&#12501;&#12457;&#12523;&#12488;&#12395;&#12354;&#12427;Slide&#27231;&#33021;<a class="anchor-link" href="#&#12487;&#12501;&#12457;&#12523;&#12488;&#12395;&#12354;&#12427;Slide&#27231;&#33021;">&#182;</a></h3><ul>
+<li>convert/serveがめんどい</li>
+<li>コード部分いらない</li>
+<li>スタイルがイマイチ</li>
+</ul>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="RISE">RISE<a class="anchor-link" href="#RISE">&#182;</a></h3><ul>
 <li>reveal.jsベース</li>
 <li>Notebook上からボタン一発でスライドに切り替え</li>
@@ -11935,24 +11948,31 @@ jupyter-nbextension <span class="nb">enable</span> rise --py --sys-prefix
 
 </div>
 </div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#12467;&#12540;&#12489;&#12398;&#23455;&#34892;&#12487;&#12514;">&#12467;&#12540;&#12489;&#12398;&#23455;&#34892;&#12487;&#12514;<a class="anchor-link" href="#&#12467;&#12540;&#12489;&#12398;&#23455;&#34892;&#12487;&#12514;">&#182;</a></h3>
+</div>
+</div>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
+
 
 <span class="nd">@interact</span><span class="p">(</span><span class="n">theta</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">theta</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span> <span class="o">*</span> <span class="n">x_</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x_</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
-    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
-    <span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11973,13 +11993,13 @@ jupyter-nbextension <span class="nb">enable</span> rise --py --sys-prefix
 
  
  
-<div id="188a86f7-4401-4c6c-a042-c0b23f560b8c"></div>
+<div id="c072b604-7da5-4f6f-9397-e78c3ce2e533"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
+var element = $('#c072b604-7da5-4f6f-9397-e78c3ce2e533');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "b29a81356c92467fb9eaf24692cd1b62", "version_major": 2, "version_minor": 0}
+{"model_id": "f89a4211da4c42c09ea03ce4e4d7f7f2", "version_major": 2, "version_minor": 0}
 </script>
 </div>
 
@@ -12006,9 +12026,18 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div>
 </div>
 </div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#12467;&#12540;&#12489;&#12434;&#38560;&#12375;&#12383;&#20363;">&#12467;&#12540;&#12489;&#12434;&#38560;&#12375;&#12383;&#20363;<a class="anchor-link" href="#&#12467;&#12540;&#12489;&#12434;&#38560;&#12375;&#12383;&#20363;">&#182;</a></h3><p>現状ではRISEでしかできない？</p>
+
+</div>
+</div>
+</div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -12043,7 +12072,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div>
 </div>
 
-</div></section></section><section><section>
+</div></div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12051,7 +12080,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 <h3 id="IPython.display.HTML,-%%HTML(Cell-Magic)">IPython.display.HTML, %%HTML(Cell Magic)<a class="anchor-link" href="#IPython.display.HTML,-%%HTML(Cell-Magic)">&#182;</a></h3><ul>
 <li>HTML記法の内容を出力できる</li>
 <li>Markdownで表現できない部分を補える</li>
-<li></li>
+<li>スタイルを変更できる</li>
 </ul>
 
 </div>
@@ -12059,7 +12088,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
@@ -12077,7 +12106,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[4]:</div>
+<div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -12093,7 +12122,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">HTML</span>
@@ -12138,7 +12167,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
@@ -12156,7 +12185,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[9]:</div>
+<div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -12189,6 +12218,42 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Video</span>
+
+<span class="n">Video</span><span class="p">(</span><span class="s1">&#39;nc27125.mp4&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<video src="nc27125.mp4" controls>
+      Your browser does not support the <code>video</code> element.
+    </video>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12204,7 +12269,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">YouTubeVideo</span>
@@ -12222,7 +12287,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[11]:</div>
+<div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -12243,7 +12308,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div>
 </div>
 
-</div></section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12258,7 +12323,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Markdown</span>
@@ -12280,14 +12345,14 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[12]:</div>
+<div class="prompt output_prompt">Out[8]:</div>
 
 
 
 <div class="output_markdown rendered_html output_subarea output_execute_result">
 <ul>
-<li>今日は05月02日です</li>
-<li>いまは14時16分です</li>
+<li>今日は05月05日です</li>
+<li>いまは15時42分です</li>
 </ul>
 
 </div>
@@ -12305,11 +12370,49 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 <h3 id="jinja2">jinja2<a class="anchor-link" href="#jinja2">&#182;</a></h3><ul>
 <li>テンプレートエンジン</li>
 <li>HTMLとMarkdownなどを組み合わせると色々できそう</li>
-<li>プレゼンの直前まで決まっていない項目があってもテンプレートしておけば差し替えが容易</li>
+<li>自己紹介などテンプレ的なものを作っておくと便利そう</li>
 </ul>
 
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">jinja2</span> <span class="k">import</span> <span class="n">Template</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;井上喜久子&#39;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span> <span class="o">-</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">1964</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span><span class="o">.</span><span class="n">days</span> <span class="o">//</span> <span class="mi">365</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;age&#39;</span><span class="p">:</span> <span class="n">age</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">name</span><span class="p">}</span>
+<span class="n">tpl</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="s1">&#39;{{ name }} さんは {{ age }} 歳です。&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tpl</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>井上喜久子 さんは 17 歳です。
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -12325,17 +12428,16 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
+
 <span class="k">def</span> <span class="nf">highlight_max</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    highlight the maximum in a Series yellow.</span>
-<span class="sd">    &#39;&#39;&#39;</span>
     <span class="n">is_max</span> <span class="o">=</span> <span class="n">s</span> <span class="o">==</span> <span class="n">s</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
     <span class="k">return</span> <span class="p">[</span><span class="s1">&#39;background-color: yellow&#39;</span> <span class="k">if</span> <span class="n">v</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">is_max</span><span class="p">]</span>
+
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">highlight_max</span><span class="p">)</span>
@@ -12351,22 +12453,22 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[5]:</div>
+<div class="prompt output_prompt">Out[10]:</div>
 
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <style  type="text/css" >
-    #T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col0 {
+    #T_8c3f9b98_502f_11e8_a421_002710e3a2d8row0_col0 {
             background-color:  yellow;
-        }    #T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col1 {
+        }    #T_8c3f9b98_502f_11e8_a421_002710e3a2d8row2_col2 {
             background-color:  yellow;
-        }    #T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col3 {
+        }    #T_8c3f9b98_502f_11e8_a421_002710e3a2d8row2_col3 {
             background-color:  yellow;
-        }    #T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row1_col2 {
+        }    #T_8c3f9b98_502f_11e8_a421_002710e3a2d8row3_col1 {
             background-color:  yellow;
         }</style>  
-<table id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8" > 
+<table id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8" > 
 <thead>    <tr> 
         <th class="blank level0" ></th> 
         <th class="col_heading level0 col0" >0</th> 
@@ -12375,29 +12477,29 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
         <th class="col_heading level0 col3" >3</th> 
     </tr></thead> 
 <tbody>    <tr> 
-        <th id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8level0_row0" class="row_heading level0 row0" >0</th> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col0" class="data row0 col0" >0.723173</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col1" class="data row0 col1" >0.785264</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col2" class="data row0 col2" >0.279851</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row0_col3" class="data row0 col3" >0.992468</td> 
+        <th id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8level0_row0" class="row_heading level0 row0" >0</th> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row0_col0" class="data row0 col0" >0.856196</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row0_col1" class="data row0 col1" >0.783144</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row0_col2" class="data row0 col2" >0.281343</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row0_col3" class="data row0 col3" >0.373142</td> 
     </tr>    <tr> 
-        <th id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8level0_row1" class="row_heading level0 row1" >1</th> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row1_col0" class="data row1 col0" >0.487764</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row1_col1" class="data row1 col1" >0.7324</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row1_col2" class="data row1 col2" >0.910868</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row1_col3" class="data row1 col3" >0.844319</td> 
+        <th id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8level0_row1" class="row_heading level0 row1" >1</th> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row1_col0" class="data row1 col0" >0.398269</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row1_col1" class="data row1 col1" >0.706975</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row1_col2" class="data row1 col2" >0.0859492</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row1_col3" class="data row1 col3" >0.313883</td> 
     </tr>    <tr> 
-        <th id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8level0_row2" class="row_heading level0 row2" >2</th> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row2_col0" class="data row2 col0" >0.338435</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row2_col1" class="data row2 col1" >0.0420239</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row2_col2" class="data row2 col2" >0.46243</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row2_col3" class="data row2 col3" >0.528613</td> 
+        <th id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8level0_row2" class="row_heading level0 row2" >2</th> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row2_col0" class="data row2 col0" >0.0620631</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row2_col1" class="data row2 col1" >0.217332</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row2_col2" class="data row2 col2" >0.990407</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row2_col3" class="data row2 col3" >0.622948</td> 
     </tr>    <tr> 
-        <th id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8level0_row3" class="row_heading level0 row3" >3</th> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row3_col0" class="data row3 col0" >0.116332</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row3_col1" class="data row3 col1" >0.465896</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row3_col2" class="data row3 col2" >0.0699697</td> 
-        <td id="T_c0fcbfce_4dd6_11e8_974b_002710e3a2d8row3_col3" class="data row3 col3" >0.712109</td> 
+        <th id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8level0_row3" class="row_heading level0 row3" >3</th> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row3_col0" class="data row3 col0" >0.22312</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row3_col1" class="data row3 col1" >0.836461</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row3_col2" class="data row3 col2" >0.323799</td> 
+        <td id="T_8c3f9b98_502f_11e8_a421_002710e3a2d8row3_col3" class="data row3 col3" >0.0790808</td> 
     </tr></tbody> 
 </table> 
 </div>
@@ -12407,7 +12509,7 @@ var element = $('#188a86f7-4401-4c6c-a042-c0b23f560b8c');
 </div>
 </div>
 
-</div>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
@@ -12422,6 +12524,18 @@ HTMLとしてはできるが、スライド形式ではない</p>
 </ol>
 <blockquote><p>参考: <a href="http://www.procrasist.com/entry/5-jupyter-slide">http://www.procrasist.com/entry/5-jupyter-slide</a></p>
 </blockquote>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="TBD">TBD<a class="anchor-link" href="#TBD">&#182;</a></h3><p>シェアすることまで考えると<br>
+.ipynb -&gt; .md -&gt; GitPitch<br>
+の流れが楽そうな気がしてきた</p>
+<p>気が向いたらGitPitch用のconvertツールを作るかも？</p>
 
 </div>
 </div>
